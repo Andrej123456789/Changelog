@@ -2,3 +2,10 @@ name: Changelog
 version: '1.0-SNAPSHOT'
 main: me.andrej123456789.changelog.Changelog
 api-version: '1.19'
+
+commands:
+  changelog:
+    description: Pushes changelog to Discord using webhooks
+    usage: '/changelog <message>'
+    permission: changelog.use
+    permission-message: '&cYou do not have permission to use this command'
