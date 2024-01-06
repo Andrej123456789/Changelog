@@ -4,7 +4,7 @@ Push your changelog from Minecraft server to Discord using webhooks!
 Version: 1.19.4+
 
 ## How to use
-- `/changelog <message>
+- `/changelog <message>`
 
 ### Permissions
 - `changelog.use`
