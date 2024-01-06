@@ -1,6 +1,8 @@
 package me.andrej123456789.changelog;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.ChatColor;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -35,10 +37,11 @@ public class Command implements CommandExecutor, TabExecutor {
         }
 
         String webhookURL = plugin.getConfig().getString("url");
-
         DiscordWebhook webhook = new DiscordWebhook(webhookURL);
 
         String message = String.join(" ", args);
+        message = PlaceholderAPI.setPlaceholders((OfflinePlayer) sender, message);
+
         webhook.setContent("**" + user_sending + "**" + " - " + message);
 
         try {
