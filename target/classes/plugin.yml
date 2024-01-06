@@ -1,0 +1,4 @@
+name: Changelog
+version: '1.0-SNAPSHOT'
+main: me.andrej123456789.changelog.Changelog
+api-version: '1.19'
