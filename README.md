@@ -7,6 +7,7 @@ Dependencies: PlaceholderAPI
 
 ## How to use
 - `/changelog <message>`
+- Don't forget to set `url` key in `config.yml` to webhook URL
 
 ### Permissions
 - `changelog.use`
