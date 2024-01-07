@@ -24,9 +24,10 @@ public final class Changelog extends JavaPlugin implements Listener {
         saveDefaultConfig();
 
         getLogger().info("Initialization of Changelog is done!");
-        getServer().getConsoleSender().sendMessage("[SimpleJobs] If you like this plugin, give it a star on Github: "
+        getServer().getConsoleSender().sendMessage("[Changelog] If you like this plugin, give it a star on Github: "
                                                     + ChatColor.DARK_AQUA +
-                                                    "https://github.com/Andrej123456789/Changelog");
+                                                    "https://github.com/Andrej123456789/Changelog" +
+                                                    ChatColor.RESET);
 
         getCommand("changelog").setExecutor(new Command());
     }
