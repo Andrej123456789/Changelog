@@ -21,6 +21,11 @@ public class Command implements CommandExecutor, TabExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull org.bukkit.command.Command command, @NotNull String label, @NotNull String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage("Only in-game players can execute this command!");
+            return true;
+        }
+
         if (args.length < 1) {
             return false;
         }
